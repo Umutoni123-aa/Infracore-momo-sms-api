@@ -1,2 +1,5 @@
 # Infracore-momo-sms-api
-Secure REST API for MoMo SMS transaction data build in python. Team Infracore
+Secure REST API for MoMo SMS transaction data build in python.
+# Team
+Team Name: Infracore
+Members: 3
