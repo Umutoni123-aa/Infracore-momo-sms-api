@@ -4,18 +4,16 @@ Secure REST API for MoMo SMS transaction data build in python.
 Team Name: Infracore
 Members: 3
 
-Mobile Money Transaction REST API - Project Summary
-Overview
-A secure REST API for managing mobile money transaction data from SMS records. Built with Python's http.server module, featuring Basic Authentication, CRUD operations, and Data Structures & Algorithms (DSA) implementations.
+Mobile Money Transaction REST API 
+A secure REST API for managing mobile money transaction data from SMS records.
 Key Features:
 Full CRUD operations (GET, POST, PUT, DELETE)
 Basic Authentication for secure access
 XML to JSON parsing
 DSA performance comparison (Linear Search vs Dictionary Lookup)
-Comprehensive documentation with testing guides
 
 Quick Setup
-Prerequisites: Python 3.7+ (no external dependencies required)
+Prerequisites: Python 3.7
 Installation Steps:
 bash
 # 1. Clone repository
@@ -35,28 +33,6 @@ Alternative Accounts:
 student:momo2024
 testuser:test123
 API Endpoints
-Method
-Endpoint
-Description
-GET 
-/transactions
-Get all transactions
-GET
-/transactions/{id}
-Get transaction by ID
-GET
-/transactions/stats
-Get statistics
-POST
-/transactions
-Create new transaction
-PUT
-/transactions/{id}
-Update transaction
-DELETE
-/transactions/{id}
-Delete transaction
-
 
 Testing Examples
 1. Get all transactions:
@@ -110,7 +86,6 @@ Always 1
 Why Dictionary Lookup is Faster:
 Linear search checks each item sequentially (O(n))
 Dictionary uses hash table for direct access (O(1))
-Constant time regardless of dataset size
 Security Analysis
 Basic Authentication Limitations:
 Base64 encoding is NOT encryption
