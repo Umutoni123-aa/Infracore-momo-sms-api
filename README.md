@@ -2,7 +2,9 @@
 Secure REST API for MoMo SMS transaction data build in python.
 # Team
 Team Name: Infracore
-Members: 3MoMo SMS REST API Project
+Members: 3
+
+MoMo SMS REST API Project
 Overview
 This project implements a REST API for a Mobile Money SMS data processing system. The API allows clients (mobile apps, web apps) to interact securely with transaction data through standard HTTP methods.
 Key Components:
@@ -11,6 +13,7 @@ REST API Server - Implements CRUD operations with authentication
 DSA Module - Demonstrates search algorithm efficiency comparison
 Comprehensive Documentation - Complete API reference and examples
 Features
+
 Full CRUD Operations
 GET all transactions
 GET single transaction by ID
@@ -18,6 +21,7 @@ POST new transaction
 PUT update existing transaction
 DELETE transaction
 Security
+
 HTTP Basic Authentication
 Protected endpoints (401 on invalid credentials)
 Detailed security analysis and recommendations
@@ -31,6 +35,7 @@ Complete API endpoint documentation
 Request/Response examples
 Error code reference
 Security best practices
+
 Project Structure
 momo_api_project/
 ├── api/
@@ -48,6 +53,7 @@ momo_api_project/
 │   └── (test screenshots will be placed here)
 ├── README.md               # This file
 └── team_participation.md   # Team participation sheet
+
 Required Python Libraries
 All libraries used are part of Python's standard library:
 http.server - HTTP server implementation
@@ -57,20 +63,6 @@ base64 - Authentication encoding
 time - Performance benchmarking
 Installation & Setup
 Step 1: Clone/Download the Repository
-# If using git
-git clone <repository-url>
-cd momo_api_project
-
-# Or download and extract the ZIP file
-
-Step 2: Verify Python Installation
-python3 --version
-# Should show Python 3.7 or higher
-
-Step 3: Parse XML Data
-cd dsa
-python3 xml_parser.py
-cd ..
 
 This will:
 Parse modified_sms_v2.xml
