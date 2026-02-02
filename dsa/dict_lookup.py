@@ -21,8 +21,7 @@ def build_transaction_dict(transactions):
         transaction_dict[trans_id] = transaction
     
     return transaction_dict
-
-
+    
 def dict_lookup(transaction_dict, target_id):
     """
     Search for a transaction by ID using dictionary lookup
