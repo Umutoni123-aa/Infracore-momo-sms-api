@@ -2,7 +2,8 @@ import xml.etree.ElementTree as ET
 import os
 import re
 
-def parse_sms_xml(file_path):
+
+def parse_xml_file(file_path):
     # Check if XML file exists
     if not os.path.exists(file_path):
         print("XML file not found")
@@ -26,7 +27,6 @@ def parse_sms_xml(file_path):
             "raw_text": sms.get("body")
         }
 
-        # Check if money was received
         if "received" in body:
             transaction["type"] = "received"
 
@@ -40,7 +40,6 @@ def parse_sms_xml(file_path):
 
             transaction["receiver"] = "self"
 
-        # Check if money was sent
         elif "payment of" in body or "transferred to" in body:
             transaction["type"] = "sent"
 
@@ -60,7 +59,7 @@ def parse_sms_xml(file_path):
 
 
 if __name__ == "__main__":
-    data = parse_sms_xml("../data/modified_sms_v2.xml")
+    data = parse_xml_file("../data/modified_sms_v2.xml")
     print("Total transactions:", len(data))
     print(data[:2])
 
