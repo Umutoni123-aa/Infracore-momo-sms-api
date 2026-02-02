@@ -69,38 +69,38 @@ if __name__ == "__main__":
     ]
     
     print("Dictionary Lookup Test")
-    print("=" * 50)
+    print("*" * 50)
     
     # Build the dictionary
     trans_dict = build_transaction_dict(test_transactions)
-    print(f"✓ Built dictionary with {len(trans_dict)} transactions\n")
+    print(f"Built dictionary with {len(trans_dict)} transactions\n")
     
     # Test search for existing ID
     target = 4
     result = dict_lookup(trans_dict, target)
     
     if result:
-        print(f"✓ Found transaction {target}: {result}")
+        print(f"Found transaction {target}: {result}")
     else:
-        print(f"✗ Transaction {target} not found")
+        print(f" Transaction {target} not found")
     
     # Test with comparison count
     target = 5
     result, count = dict_lookup_with_count(trans_dict, target)
-    print(f"\n✓ Found transaction {target} after {count} comparison (O(1)!)")
+    print(f"\nFound transaction {target} after {count} comparison (O(1)!)")
     
     # Test search for non-existing ID
     target = 99
     result = dict_lookup(trans_dict, target)
     print(f"\nSearching for transaction {target}:")
     if result:
-        print(f"✓ Found: {result}")
+        print(f" Found: {result}")
     else:
-        print(f"✗ Not found")
+        print(f" Not found")
     
-    print("\n" + "=" * 50)
+    print("\n" + "*" * 50)
     print("Why is dictionary lookup faster?")
-    print("=" * 50)
+    print("*" * 50)
     print("Linear Search: Checks each item one by one - O(n)")
     print("Dictionary Lookup: Uses hash table - direct access - O(1)")
     print("\nFor 1000 transactions:")
