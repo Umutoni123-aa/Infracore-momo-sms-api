@@ -102,7 +102,7 @@ def run_efficiency_test():
     Main function to run the efficiency test
     """
     # Check if XML file exists
-    xml_file = "modified_sms_v2.xml"
+    xml_file = "../data/modified_sms_v2.xml"
     
     if not os.path.exists(xml_file):
         print(f"✗ Error: {xml_file} not found!")
